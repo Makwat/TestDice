@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TestDice</string>
+
+    <string name="test">เกมลูกเต๋า</string>
 </resources>
