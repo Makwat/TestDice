@@ -1,5 +1,6 @@
 package kru.somwang.makwat.testdice;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.CharacterPickerDialog;
@@ -94,10 +95,13 @@ public class MainActivity extends AppCompatActivity {
         intSource[6] = R.drawable.dice6;
 
         imageDice.setImageResource(intSource[myRandom]);
+        MediaPlayer iMedia = MediaPlayer.create(getBaseContext(), intSound);
+        iMedia.start();
     }
 
     private void changeplay (int intdice){
         Log.d("test", "ค่าที่ได้รับ = " + intdice);
+        intSound = R.raw.effect_btn_shut;
 
         switch (intdice){
             case 1 :
@@ -119,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
                 imageDice.setImageResource(R.drawable.dice6);
                 break;
         }
+        MediaPlayer iMedia = MediaPlayer.create(getBaseContext(), intSound);
+        iMedia.start();
     }
 
 }
