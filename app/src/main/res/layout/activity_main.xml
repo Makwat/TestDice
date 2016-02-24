@@ -22,7 +22,8 @@
             android:text="@string/test"
             android:id="@+id/texttitle"
             android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/h1" />
+            android:textSize="@dimen/h1"
+            android:textColor="#000000" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -41,7 +42,10 @@
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="true"
         android:layout_gravity="bottom"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/h2"
+        android:textColor="#ffffff"
+        android:background="#000000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -50,7 +54,10 @@
         android:id="@+id/btnran"
         android:layout_gravity="bottom"
         android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/btnback" />
+        android:layout_alignTop="@+id/btnback"
+        android:textSize="@dimen/h2"
+        android:textColor="#ffffff"
+        android:background="#000000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -59,6 +66,9 @@
         android:id="@+id/btnnext"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/btnran" />
+        android:layout_alignTop="@+id/btnran"
+        android:textSize="@dimen/h2"
+        android:textColor="#ffffff"
+        android:background="#000000" />
 
 </RelativeLayout>
