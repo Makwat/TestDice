@@ -2,6 +2,8 @@ package kru.somwang.makwat.testdice;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.CharacterPickerDialog;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -16,6 +18,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bindWidget();
+
+        btnback();
+        btnran();
+        btnnext();
+    }
+
+    private void btnnext() {
+        btnnext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    private void btnran() {
+        btnran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    private void btnback() {
+        btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     private void bindWidget() {
